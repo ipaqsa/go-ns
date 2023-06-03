@@ -1,0 +1,15 @@
+- cgroup support
+
+- uidmap/gidmap set
+
+- io namespace support
+
+- vfs ?
+
+- namespace from container
+
+// https://github.com/jmuia/go-container
+
+// https://github.com/tobert/lnxns
+
+// https://github.com/rootless-containers/rootlesskit
