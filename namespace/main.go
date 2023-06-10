@@ -57,7 +57,6 @@ func FromThread(pid, tid int) (*Namespace, error) {
 				return nil, err
 			}
 			entry.fd = fd
-			entry.share = true
 			ns.ns[n] = entry
 		}
 	}
@@ -74,7 +73,6 @@ func FromPid(pid int) (*Namespace, error) {
 				return nil, err
 			}
 			entry.fd = fd
-			entry.share = true
 			ns.ns[n] = entry
 		}
 	}
