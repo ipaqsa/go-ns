@@ -105,12 +105,10 @@ func (ns *Namespace) Set(NSs []string) error {
 		if !val.share {
 			continue
 		}
-		fmt.Printf("Preparing %s...\n", key)
 		err := unix.Setns(val.fd, CloneFlags[key])
 		if err != nil {
 			return err
 		}
-		fmt.Printf("Set %s\n", key)
 	}
 	return nil
 }
